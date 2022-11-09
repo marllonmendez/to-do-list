@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    background-color: rgb(70, 70, 224);
+}
+
+header, h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.bloco {
+    background-color: white;
+    width: 350px;
+    height: 75px;
+    margin: auto;
+    border-radius: 40px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addLista input {
+    border: solid 1px rgb(70, 70, 224);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: text;
+    font-family: 'Inter', sans-serif;
+}
+
+#addLista button {
+    border:transparent;
+    border-radius: 10px;
+    background: rgb(70, 70, 224);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+footer, p, a {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
