@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-    background-color: rgb(70, 70, 224);
+    background: linear-gradient(
+        90deg,
+        rgb(137, 70, 224) 0%,
+        rgba(70, 70, 224) 100%
+    );
 }
 
 header, h1 {
@@ -17,9 +21,21 @@ header, h1 {
     margin: auto;
     border-radius: 40px;
     margin-top: 80px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.blocoTarefas {
+    background-color: white;
+    width: 500px;
+    border-radius: 40px;
+    margin: 50px auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #addLista input {
@@ -40,10 +56,51 @@ header, h1 {
     font-family: 'Inter', sans-serif;
 }
 
+ #ok:checked ~ #nomeDaTarefa {
+    text-decoration: line-through;
+} 
+
+#ok {
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background: white;
+}
+
+.tarefas {
+    background-color: white;
+    height: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.tarefas span {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    word-break: break-all;
+
+}
+
+.tarefas button {
+    border:transparent;
+    border-radius: 10px;
+    background: rgb(70, 70, 224);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
 footer, p, a {
     text-align: center;
     color: white;
     padding-top: 50px;
-    cursor: pointer;
     font-family: 'Inter', sans-serif;
 }
